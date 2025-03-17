@@ -42,11 +42,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
       
-      - name: Install Node.js dependencies
-        run: |
-          npm install -g tailwindcss
+      - name: Install TailwindCSS CLI
+        run: npm install -g tailwindcss
       
       - name: Install Hugo CLI
         run: |
