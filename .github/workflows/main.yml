@@ -44,7 +44,8 @@ jobs:
           node-version: '20'
       
       - name: Install TailwindCSS CLI
-        run: npm install -g tailwindcss
+        run: npm install tailwindcss @tailwindcss/cli
+
       
       - name: Install Hugo CLI
         run: |
