@@ -47,7 +47,6 @@ jobs:
       - name: Install Node.js dependencies
         run: |
           npm install -g tailwindcss
-          [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true
       
       - name: Install Hugo CLI
         run: |
