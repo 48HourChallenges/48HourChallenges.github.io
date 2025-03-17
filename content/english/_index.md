@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Archie Wilkins"
-  content: "A silly software engineer."
+  content: "A silly software engineer ."
   image: "/images/banner.png"
   button:
     enable: true
