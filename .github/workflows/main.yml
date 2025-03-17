@@ -44,7 +44,10 @@ jobs:
           node-version: '20'
       
       - name: Install TailwindCSS CLI
-        run: npm install -g tailwindcss
+        run: |
+          npm install -g tailwindcss
+          export PATH="$PATH:$(npm config get prefix)/bin"
+          tailwindcss --version
       
       - name: Install Hugo CLI
         run: |
@@ -62,6 +65,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
+          PATH: $PATH:$(npm config get prefix)/bin
         run: |
           hugo \
             --minify \
