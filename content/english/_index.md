@@ -2,12 +2,9 @@
 # Banner
 banner:
   title: "Archie Wilkins"
-  content: "A silly software engineer ."
-  image: "/images/banner.png"
-  button:
-    enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
+  content: "A Devops Engineer who loves building things to make people's lives a little bit easier"
+  image: "/images/banner.jpg"
+
 
 # Features
 features:
